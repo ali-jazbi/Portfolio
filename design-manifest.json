@@ -1,0 +1,44 @@
+{
+  "title": "Ali Jazbi Portfolio Design Reference",
+  "designStyle": "Modern Editorial / Product-Focused",
+  "widths": {
+    "desktop": 1440,
+    "mobile": 390
+  },
+  "palette": {
+    "paper": "#F6F6F3",
+    "ink": "#171A1D",
+    "accent": "#2365EE",
+    "surface": "#FFFFFF",
+    "border": "#DCE0DF",
+    "secondaryText": "#626B72",
+    "darkSurface": "#151A1E"
+  },
+  "routes": [
+    {
+      "path": "/",
+      "id": "01-home"
+    },
+    {
+      "path": "/work",
+      "id": "02-work"
+    },
+    {
+      "path": "/work/healthcare-dashboards",
+      "id": "03-healthcare-case"
+    },
+    {
+      "path": "/work/parin-sanat",
+      "id": "04-parin-case"
+    },
+    {
+      "path": "/about",
+      "id": "05-about"
+    },
+    {
+      "path": "/contact",
+      "id": "06-contact"
+    }
+  ],
+  "mediaWarning": "All product visuals are illustrative mockups, not actual client data. Replace with approved images."
+}
