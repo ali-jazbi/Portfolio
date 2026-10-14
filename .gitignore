@@ -8,4 +8,5 @@ playwright-report/
 test-results/
 artifacts/screenshots/
 artifacts/qa-results.json
+artifacts/npm-audit.json
 next-env.d.ts
