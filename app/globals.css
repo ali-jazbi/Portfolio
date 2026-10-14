@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
-h1, h2, h3 { font-weight: 700; }
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
 
 /* Geometry adapted from the supplied reference; accessibility and fluid sizing below. */
 :root {
@@ -1948,10 +1952,47 @@ section[id] {
     padding: 6px 8px;
   }
 }
-.app-desc, .app-stat .num-label { color: #5e7080; }
-.store-hero p { color: #585550; }
-.project-feature.warm .feature-copy p { color: #4e4b46; opacity: 1; }
-.hero h1 .dim { color: #7d8589; }
-.large-title .dim, .contact-hero h1 .dim { color: #7d8589; }
-.store-nav { color: #626b72; }
-.portrait-initials::before { content: 'AJ.'; }
+.app-desc,
+.app-stat .num-label {
+  color: #5e7080;
+}
+.store-hero p {
+  color: #585550;
+}
+.project-feature.warm .feature-copy p {
+  color: #4e4b46;
+  opacity: 1;
+}
+.hero h1 .dim {
+  color: #7d8589;
+}
+.large-title .dim,
+.contact-hero h1 .dim {
+  color: #7d8589;
+}
+.store-nav {
+  color: #626b72;
+}
+.portrait-initials::before {
+  content: "AJ.";
+}
+/* Keep the intended three-line mobile hero with the real Inter font. */
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: clamp(44px, 14.1vw, 55px);
+  }
+  .black-panel h2 {
+    font-size: clamp(39px, 12.3vw, 48px);
+  }
+  .contact-hero h1 {
+    font-size: clamp(46px, 14.9vw, 58px);
+  }
+}
+.case-cover .store-hero p {
+  opacity: 1;
+}
+@media (max-width: 700px) {
+  #healthcare-dashboards .work-info h2 {
+    font-size: clamp(26px, 8.2vw, 32px);
+  }
+}
