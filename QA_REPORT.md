@@ -51,6 +51,8 @@ Core Web Vitals, Lighthouse scores, real-device Safari behavior and hosted CI ou
 
 The full `npm audit` reports five high-severity package entries from one development-only dependency chain: `eslint-config-next` → `@next/eslint-plugin-next` → `fast-glob` → `micromatch` → `braces`. The registry's latest `braces` is 3.0.3 and is covered by the reported advisory; an available patched release was not found. The suggested force-fix would downgrade the Next lint configuration across major versions, so it was not applied. This chain is not included in the production runtime dependency audit, which passes with zero vulnerabilities. Recheck upstream patches before updating the tooling lockfile.
 
+ESLint is pinned to the supported 9.x range because the current React, import and JSX accessibility plugins do not yet declare compatibility with ESLint 10. The npm registry marks ESLint 9 as deprecated; migrating to 10 should wait for compatible plugins. The final dependency tree and `npm ci --dry-run --ignore-scripts` were checked to avoid committing an incompatible install.
+
 ## Changed files
 
 - `app/`: Home, Work, generated case studies, About, Contact, 404, root layout, design tokens/styles, favicon, Open Graph image, robots and sitemap.
